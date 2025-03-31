@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <div class="profile-container">
+        <h1>Profile</h1>
+        <div style="display: flex; gap: 60px;">
+            <p><strong>Username:</strong> <span id="username-display"></span></p>
+            <button id="edit-username"><i class="fas fa-edit"></i> Edit Profile</button>
+        </div>
+
+        <p><strong>Email:</strong> <span id="email-display"></span></p>
+        <p><strong>Correct Guesses:</strong> <span id="correct-guesses"></span></p>
+        <p><strong>Incorrect Guesses:</strong> <span id="incorrect-guesses"></span></p>
+        
+        <button id="logout-button"><i class="fas fa-sign-out-alt"></i> Logout</button>
+        <button id="back-button"><i class="fas fa-arrow-left"></i> Back to Game</button>
+    </div>
+
+    <script type="module" src="scripts/profile.js"></script>
+    <script type="module" src="firebase-config.js"></script>
+    <script type="module" src="scripts/session.js"></script>
+
+    <img id="profile-image" src="assets/game-images/profile-img.png" alt="Profile Image">
+    <img id="banana-profile" src="assets/game-images/banana-img3.jpg" alt="Profile Banana">
+
+    <script>
+        // Add event listener to go back to Hangman game
+        document.getElementById("back-button").addEventListener("click", () => {
+            window.location.href = "hangman.html";
+        });
+    </script>
+</body>
+</html>

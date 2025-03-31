@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Hangman Game</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <div class="rules-container">
+        <div id="header-rules">
+            <h1>Welcome to Hangman Game</h1>
+            <p>The classic word-guessing game. Start playing!</p>
+        </div>
+
+        <div id="rules">
+            <p style="font-weight: bold; font-size: 30px; text-align: center; margin-top: 0;">Game Rules</p>
+            <ul>
+                <li>Guess the letters one by one to reveal the word.</li>
+                <li>For each incorrect guess, a part of the hangman is drawn.</li>
+                <li>Guess the word before the hangman
+                is fully drawn.</li>
+                <li>Each word has a hint which will be revealed after playing the banana game.</li>
+                <li>Whether the player win or lose, there will be only one chance to play the banana game for each word.</li>
+            </ul>
+
+            <button id="agree-button" onclick="window.location.href='hangman.html'">Agree</button>
+        </div>
+    </div>
+
+    <img src="assets/game-images/arrow-man.png" alt="Arrow Image" id="arrow-man-image">
+        
+
+    <script type="module" src="scripts/session.js"></script>
+</body>
+</html>

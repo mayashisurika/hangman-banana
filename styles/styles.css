@@ -1,0 +1,521 @@
+body {
+    font-family: Joti One, Unkempt, David Libre;
+    text-align: center;
+    background: linear-gradient(to bottom, #8A2BE2 -30%, #FF6347 100%);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* index.html styling */
+#header-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#header-container h1 {
+    font-size: 70px;
+    color: black;
+    margin: 20px 0;
+}
+
+#header-container p {
+    font-family: Unkempt;
+    font-weight: bold;
+    font-size: 30px;
+    color: black;
+    margin: 10px 0;
+}
+
+#header-container button {
+    font-family: Unkempt;
+    font-size: 23px;
+    padding: 10px 20px;
+    margin: 25px 0;
+    background-color: #8A2BE2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Login page */
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute; /* Remove from flex flow and center it */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center horizontally and vertically */
+    gap: 20px;
+    background: linear-gradient(to bottom, #FF6347 20%, #FFD700 100%);
+    padding: 50px 40px;
+    border-radius: 10px;
+}
+
+.login-container h2 {
+    color: black;
+    font-family: Unkempt;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.login-container p {
+    color: black;
+    font-family: Unkempt;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.login-container input {
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: none;
+    font-family: Unkempt;
+}
+
+.login-container button {
+    padding: 10px 25px;
+    font-size: 20px;
+    background-color: #8A2BE2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+    font-family: Unkempt;
+}
+
+/* Image in the bottom-right corner */
+#banana-image-bottom-right {
+    position: absolute; /* Take it out of normal flow */
+    bottom: 20px; /* Distance from bottom */
+    right: 20px; /* Distance from right */
+    width: 400px;
+    margin: 0; /* Remove any margin */
+}
+
+/* Image in the top-left corner */
+#banana-image-top-left {
+    position: absolute; /* Take it out of normal flow */
+    top: 20px; /* Distance from top */
+    left: 20px; /* Distance from left */
+    width: 400px;
+    margin: 0; /* Remove any margin */
+}
+
+/* signup page */
+.signup-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    gap: 20px;
+    background: linear-gradient(to bottom,#FF6347 20%, #FFD700 100%);
+    padding: 50px 40px;
+    border-radius: 10px;
+}
+
+.signup-container h2{
+    color: black;
+    font-family: Unkempt;
+    font-size: 40px;
+    font-weight: bold;
+    margin: 15px 0;
+}
+
+.signup-container p{
+    color: black;
+    font-family: Unkempt;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.signup-container input{
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: none;
+    font-family: Unkempt;
+}
+
+.signup-container button{
+    padding: 10px 25px;
+    font-size: 20px;
+    background-color: #8A2BE2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+    font-family: Unkempt;
+}
+
+/* Rules page */
+.rules-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* Push content toward the top */
+    margin-top: -50px; /* Pull it up higher within the flex container */
+    padding: 10px 40px; /* Reduced top/bottom padding */
+    border-radius: 10px;
+    font-family: Unkempt;
+    gap: 15px; /* Adjusted gap */
+    position: relative; /* Context for absolute positioning */
+}
+
+/* Header rules - Move closer to the top */
+#header-rules {
+    margin-top: 0;
+    margin-bottom: 40px; /* Space between header and rules */
+    padding-top: 0; /* Minimal padding from top */
+}
+
+#header-rules h1 {
+    color: black;
+    font-family: Unkempt;
+    font-size: 40px;
+    font-weight: bold;
+    margin: 5px 0; /* Reduced margin */
+}
+
+#header-rules p {
+    color: black;
+    font-family: Unkempt;
+    font-size: 20px;
+    margin: 5px 0;
+}
+
+/* Rules section */
+#rules {
+    background: linear-gradient(to bottom, #FF6347 20%, #FFD700 100%);
+    padding: 30px 40px;
+    text-align: left;
+    border-radius: 15px;
+    display: inline-block; /* Allow it to sit beside the image */
+    margin-left: 120px;
+}
+
+/* Space between <li> tags */
+#rules ul {
+    color: black;
+    font-family: Unkempt;
+    font-size: 18px;
+    margin: 10px 0;
+    padding-left: 20px;
+}
+
+#rules ul li {
+    margin-bottom: 15px; /* Space between list items */
+}
+
+/* Agree button */
+#rules button {
+    padding: 10px 25px;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: Unkempt;
+    background-color: #8A2BE2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 25px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Arrow man image - Position to the left of rules */
+#arrow-man-image {
+    position: absolute;
+    top: 50%; /* Vertically align with rules */
+    left: 120px; /* Move to the left, adjusted for 200px width */
+    transform: translateY(-50%); /* Center vertically */
+    width: 250px; /* Adjust size as needed */
+}
+
+/* profile page */
+.profile-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    gap: 10px;
+    background: #FF6347 50%;
+    box-shadow: 0 0 5px 0 #f94b2c;
+    padding: 50px;
+    border-radius: 10px;
+    font-family: Unkempt;
+}
+
+.profile-container p{
+    color: black;
+    font-family: Unkempt;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.profile-container button{
+    padding: 8px 25px;
+    font-size: 15px;
+    background-color: #8A2BE2;
+    color: white;
+    border: 2px solid #7126b8;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+    font-family: Unkempt;
+}
+
+#profile-image {
+    position: absolute;
+    top: 200px; /* Distance from top */
+    left: 60px; /* Distance from left */
+    width: 400px; /* Adjust size as needed */
+    margin: 0; /* Remove any margin */
+}
+
+#banana-profile {
+    position: absolute;
+    bottom: 15px; /* Distance from bottom */
+    right: 10px; /* Distance from right */
+    width: 400px; /* Adjust size as needed */
+    margin: 0; /* Remove any margin */
+}
+
+/* Hangman game page */
+.hangman-container {
+    display: flex;
+    flex-direction: row; /* Side-by-side layout */
+    align-items: flex-start; /* Align tops of columns */
+    justify-content: space-between; /* Left and right separation */
+    background: linear-gradient(to bottom, #FF6347 20%, #FFD700 100%);
+    padding: 100px 100px 80px;
+    border-radius: 10px;
+    width: 80%; /* Wide enough for both columns */
+    max-width: 900px; /* Constrain width */
+    position: relative; /* For h1 positioning */
+    margin-top: 50px;
+    gap: 50px; /* Space between left and right sides */
+}
+
+.hangman-container h1 {
+    font-family: Unkempt;
+    font-size: 40px;
+    position: absolute;
+    top: 30px; /* Near the top */
+    left: 50%;
+    transform: translateX(-50%); /* Center horizontally */
+    margin: 0;
+}
+
+/* Hangman header (outside hangman-container) */
+#hangman-header {
+    position: absolute;
+    top: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 15px;
+}
+
+#hangman-header button {
+    padding: 10px 20px;
+    font-size: 20px;
+    background-color: #FF6347;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: Unkempt;
+}
+
+/* Left side (word-display, hint-display, keyboard) */
+#left-side {
+    display: flex;
+    flex-direction: column; /* Vertical column */
+    align-items: center; /* Left-aligned content */
+    gap: 40px;
+    width: 50%; /* Half the container */
+    margin-top: 100px;
+}
+
+/* Word display */
+#word-display {
+    font-family: Unkempt;
+    font-size: 24px;
+    letter-spacing: 5px;
+    margin: 0;
+    text-align: left;
+}
+
+#hint-display{
+    font-family: Unkempt;
+    font-size: 25px;
+    margin: 0;
+    color: black;
+    text-align: left;
+}
+
+#keyboard {
+    display: grid;
+    grid-template-columns: repeat(10, 40px); /* 10 keys per row */
+    grid-gap: 5px;
+    background: #FF6347;
+    padding: 15px;
+    border-radius: 10px;
+    width: auto;
+    max-width: 450px;
+    margin-top: 30px;
+}
+
+#keyboard button {
+    margin: 0;
+    padding: 10px;
+    font-size: 18px;
+    font-family: Unkempt;
+    background-color: #8A2BE2;
+    color: white;
+    border: 2px solid #7126b8;
+    border-radius: 5px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#keyboard button:disabled {
+    background-color: #d3d3d3; /* Light gray for disabled buttons */
+    color: #a9a9a9; /* Dark gray for disabled text */
+    border: 2px solid #a9a9a9; /* Dark gray border for disabled buttons */
+    cursor: not-allowed; /* Change cursor to indicate disabled state */
+}
+
+/* Right side (hangman-container with canvas and hint button) */
+#hangman-container {
+    display: flex;
+    flex-direction: column; /* Vertical column */
+    align-items: flex-end; /* Right-aligned content */
+    gap: 60px;
+    width: 30%; /* Slightly less than half */
+    margin-top: 30px;
+}
+
+#hangmanCanvas {
+    width: 250px; /* Matches HTML */
+    height: 300px;
+    border: 1px solid black;
+}
+
+#hint-button {
+    padding: 10px 20px;
+    font-size: 20px;
+    background-color: #8A2BE2;
+    color: white;
+    border: 2px solid #7126b8;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: Unkempt;
+    margin-right: 75px;
+}
+
+#hint-button:disabled {
+    background-color: #d3d3d3; /* Light gray for disabled buttons */
+    color: #a9a9a9; /* Dark gray for disabled text */
+    border: 2px solid #a9a9a9; /* Dark gray border for disabled buttons */
+    cursor: not-allowed; /* Change cursor to indicate disabled state */
+}
+
+/* Stick man image - Bottom right corner */
+#stick-man-image {
+    position: absolute;
+    bottom: 20px; /* Distance from bottom */
+    right: 20px; /* Distance from right */
+    width: 200px; /* Adjust size as needed */
+    margin: 0; /* Remove any margin */
+}
+
+#confuse-stickman-image{
+    position: absolute;
+    top: 50px; /* Distance from top */
+    left: 30px; /* Distance from left */
+    width: 250px; /* Adjust size as needed */
+    margin: 0; /* Remove any margin */
+}
+
+/* Banana pgae */
+.banana-container {
+    font-family: Unkempt;
+}
+
+.banana-container #answer-buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.banana-container button{
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #FFD700;
+    color: black;
+    border: 2px solid   #7126b8;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: Unkempt;
+}
+
+#banana-image2 {
+    position: absolute;
+    bottom: 0; /* Distance from bottom */
+    right: 10px; /* Distance from right */
+    width: 300px; /* Adjust size as needed */
+    margin: 0; /* Remove any margin */
+}
+
+#banana-image3 {
+    position: absolute;
+    top: 10px; /* Distance from top */
+    left: 60px; /* Distance from left */
+    width: 250px; /* Adjust size as needed */
+    margin: 0; /* Remove any margin */
+}
+
+#banana-image4 {
+    position: absolute;
+    top: 50px; /* Distance from top */
+    right: 50px; /* Distance from right */
+    width: 150px; /* Adjust size as needed */
+    margin: 0; /* Remove any margin */
+}
+
+#banana-image5 {
+    position: absolute;
+    bottom: 10px; /* Distance from bottom */
+    left: 50px; /* Distance from left */
+    width: 200px; /* Adjust size as needed */
+    margin: 0; /* Remove any margin */
+}
+
+#result-message {
+    font-weight: bold;
+    font-size: 20px;
+}

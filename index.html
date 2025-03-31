@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Hangman Game</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <div id="header-container">
+        <h1>Welcome to Hangman Game</h1>
+        <p>The classic word-guessing game. Login to start playing!</p>
+        <button onclick="window.location.href='login.html'">Login</button>
+        <p style="font-size: 20px; font-family: Unkempt;">Don't have an account? <a href="signup.html">Signup here</a></p>
+    </div>
+
+    <div id="image-container">
+        <img src="assets/game-images/hangmanimg.png" alt="Hangman Image" id="hangman-image">
+    </div>
+
+    <script type="module" src="scripts/session.js"></script>
+</body>
+</html>

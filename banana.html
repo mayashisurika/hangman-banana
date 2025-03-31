@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banana Mini-Game</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <div class="banana-container">
+        <h1>Banana Mini-Game</h1>
+        <p id="question-text">Loading question...</p>
+        <div id="answer-buttons"></div>
+        <p id="result-message"></p>
+    </div>
+
+    <img id="banana-image2" src="assets/game-images/banana.png" alt="Banana Image2">
+    <img id="banana-image3" src="assets/game-images/banana.png" alt="Banana Image3">
+    <img id="banana-image4" src="assets/game-images/banana.png" alt="Banana Image4">    
+    <img id="banana-image5" src="assets/game-images/banana.png" alt="Banana Image5">
+
+
+    <!-- Add audio element for background music -->
+    <audio id="background-music" autoplay>
+        <source src="assets/audio/banana-page-audio.wav" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <script type="module" src="scripts/banana.js"></script>
+    <script type="module" src="scripts/session.js"></script>
+    <script type="module" src="firebase-config.js"></script>
+</body>
+</html>

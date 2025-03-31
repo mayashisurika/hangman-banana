@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup - Hangman</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <div class="signup-container">
+        <h2>Signup</h2>
+        <input type="text" id="signup-username" placeholder="Username" required>
+        <input type="email" id="signup-email" placeholder="Email" required>
+        <input type="password" id="signup-password" placeholder="Password" required>
+        <input type="password" id="signup-confirm-password" placeholder="Confirm Password" required>
+        <button onclick="signup()">Signup</button>
+        <p>Already have an account? <a href="login.html">Login here</a></p>
+    </div>
+
+    <img src="assets/game-images/banana-img.png" alt="Banana Image Bottom Right" id="banana-image-bottom-right">
+    <img src="assets/game-images/banana-img.png" alt="Banana Image Top Left" id="banana-image-top-left">
+
+    <script type="module" src="firebase-config.js"></script>
+    <script type="module" src="scripts/auth.js"></script>
+</body>
+</html>
