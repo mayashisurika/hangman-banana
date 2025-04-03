@@ -122,7 +122,7 @@ function updateWordDisplay() {
         .join(" ");
 }
 
-// Function to Create the Keyboard Buttons Dynamically
+// Function to Create the Keyboard Buttons Dynamically - AI generated
 function initializeKeyboard() {
     if (!keyboardContainer) return;
     keyboardContainer.innerHTML = "";
@@ -163,7 +163,8 @@ function isWordGuessed() {
     return selectedWord.split("").every(letter => guessedLetters.includes(letter));
 }
 
-// Function to Store Word Guess Counts in Firebase
+// Function to Store Word Guess Counts in Firebase - AI generated
+// This function updates the user's correct and incorrect word guess counts in Firestore
 async function storeGuessCounts() {
     const user = auth.currentUser;
     if (user) {
